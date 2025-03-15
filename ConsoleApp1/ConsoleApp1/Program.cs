@@ -23,4 +23,13 @@ class Program
         }
         return sum / numbers.Length;
     }
+    static int FindMaxValue(int[] numbers)
+    {
+        if (numbers == null || numbers.Length == 0)
+        {
+            throw new ArgumentException("Tablica nie może być pusta ani null.");
+        }
+
+        return numbers.Max();
+    }
 }
